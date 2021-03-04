@@ -40,6 +40,10 @@ describe('Conway Suite', function () {
       expect(this.suite.getNextSequence('2 3 3 1')).equal('1 2 2 3 1 1');
     });
 
+    it('should return 1 2 1 1 1 3 1 1 1 3 1 2 if 2 1 3 1 3 2 given', function () {
+      expect(this.suite.getNextSequence('2 1 3 1 3 2')).equal('1 2 1 1 1 3 1 1 1 3 1 2');
+    });
+
   });
 
   describe('should give the right next n sequences', function () {
